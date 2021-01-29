@@ -70,7 +70,11 @@
                 positionX = positionX + speed;
 				moveBoxTo(positionX);
                 if (positionX > boardWidth){
-                    action = speed = -speed;
+                    return speed = -speed;
+                    
+                }
+                else if (positionX < boardWidth){
+                  return speed = -speed;
                     
                 }
 			};
