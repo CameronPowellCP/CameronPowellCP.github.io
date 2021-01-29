@@ -24,9 +24,9 @@
             
         }
         
-        /* 
+       /*  
         // Fire on Spacebar Code:
-        
+       
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
         var fireKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         fireKey.onDown.add(fire, player.asset);
