@@ -5,7 +5,7 @@ $(document).ready(function () {
     let 
         opspark = window.opspark,
         game = opspark.createGame(create, update),
-        lives = 3;
+        lives = 4;
         
     function create() {
         game.opspark.init();
@@ -21,7 +21,7 @@ $(document).ready(function () {
         
         opspark.player.init(game);
         
-        const textOpts = { fontSize: '32px', fill: '#000' };
+        const textOpts = { fontSize: '32px', fill: '#999' };
         game.score = game.add.text(16, 16, 'Score: 0', textOpts);
         game.lives = game.add.text(16, 70, 'Lives: ' + lives, textOpts);
     }
