@@ -43,8 +43,8 @@ var background = function (window) {
             // TODO: 3 - Add a moon and starfield
             // moon
            var moon = draw.bitmap('img/moon.png');
-                moon.x = 1200;
-                moon.y = -140;
+                moon.x = 1000;
+                moon.y = -240;
                 moon.scaleX = 1.0;
                 moon.scaleY = 1.0;
                 background.addChild(moon);
@@ -68,11 +68,10 @@ var background = function (window) {
 }
             
             // TODO 4: Part 1 - Add a tree
-            tree = draw.bitmap('img/tree.png');
+            tree = draw.bitmap('img/tree2.png');
             tree.x = 500;
-            tree.y =90;
+            tree.y =-190;
             background.addChild(tree);
-            
         } // end of render function - DO NOT DELETE
         
         
@@ -93,7 +92,7 @@ var background = function (window) {
             // TODO 5: Part 2 - Parallax
         for (var i = 0; i < buildings.length; i++) {
         var building = buildings[i];
-        building.x = building.x -3 
+        building.x = building.x -10 
         if(building.x < -200)
         building.x = canvasWidth;}
         } // end of update function - DO NOT DELETE
